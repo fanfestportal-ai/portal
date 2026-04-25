@@ -24,18 +24,20 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== ЗАГОЛОВКИ (ВСЁ ЧТО INKULINATI - ФИОЛЕТОВЫЙ #b388ff) ===== */
+/* ===== ЗАГОЛОВКИ ===== */
 h1, h2, h3, .logo span, .footer-logo span, .nav-link, .cta-btn, .buy-btn, .tab-btn, .section-title,
-.subtitle, .fest-tagline, .fest-quote, .fest-universe {
+.fest-tagline, .fest-quote, .fest-universe {
     font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
     font-weight: normal;
     color: #b388ff;
 }
 
-/* ФанФест и Среднеуральск - возвращаем кремовый/белый цвет */
+/* ФанФест и Среднеуральск - кремовый/белый */
 .gothic-title,
 .subtitle {
-    color: #f5e6d3;  /* кремовый/белый */
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
+    font-weight: normal;
+    color: #f5e6d3;
 }
 
 /* Для элементов, где нужен белый цвет внутри фраз */
@@ -48,7 +50,6 @@ h1, h2, h3, .logo span, .footer-logo span, .nav-link, .cta-btn, .buy-btn, .tab-b
 .gothic-title .neon {
     color: #b388ff;
     text-shadow: 0 0 20px #8a2be2, 0 0 40px #b388ff;
-}
 }
 
 /* ===== ОТСТУПЫ ===== */
@@ -269,7 +270,6 @@ section {
     font-size: clamp(2.5rem, 8vw, 5rem);
     margin-bottom: 1rem;
     text-shadow: none;
-    color: #b388ff;
 }
 
 .neon {
@@ -279,7 +279,6 @@ section {
 
 .subtitle {
     font-size: 1.3rem;
-    color: #b388ff;
     letter-spacing: 2px;
     text-shadow: none;
     line-height: 1.4;
@@ -383,12 +382,10 @@ section {
 }
 
 /* ===== УМЕНЬШЕНИЕ ШРИФТА Secession НА 20% (КРОМЕ ДОМАШНЕЙ СТРАНИЦЫ) ===== */
-/* Все секции, кроме #home */
 .section:not(#home) {
     font-size: 0.88rem;
 }
 
-/* Контент внутри секций (кроме домашней) */
 .section:not(#home) p,
 .section:not(#home) li,
 .section:not(#home) .transport-item p,
@@ -406,12 +403,10 @@ section {
     font-size: 0.88rem;
 }
 
-/* Карточки контента (кроме домашней) */
 .section:not(#home) .content-card {
     font-size: 0.88rem;
 }
 
-/* Билеты (кроме домашней) */
 .section:not(#home) .ticket-card .price {
     font-size: 0.88rem;
 }
@@ -728,7 +723,7 @@ section {
     color: #888;
 }
 
-/* ===== КАБАН (левый нижний угол) ===== */
+/* ===== КАБАН ===== */
 .mascot-left {
     position: fixed;
     bottom: 20px;
@@ -820,7 +815,7 @@ section {
     box-shadow: 0 0 25px #b388ff;
 }
 
-/* ===== АДАПТИВ (МОБИЛЬНЫЕ УСТРОЙСТВА) ===== */
+/* ===== АДАПТИВ ===== */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
