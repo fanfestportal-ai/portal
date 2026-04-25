@@ -26,10 +26,16 @@ body {
 
 /* ===== ЗАГОЛОВКИ (ВСЁ ЧТО INKULINATI - ФИОЛЕТОВЫЙ #b388ff) ===== */
 h1, h2, h3, .logo span, .footer-logo span, .nav-link, .cta-btn, .buy-btn, .tab-btn, .section-title,
-.gothic-title, .subtitle, .fest-tagline, .fest-quote, .fest-universe {
+.subtitle, .fest-tagline, .fest-quote, .fest-universe {
     font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
     font-weight: normal;
     color: #b388ff;
+}
+
+/* ФанФест и Среднеуральск - возвращаем кремовый/белый цвет */
+.gothic-title,
+.subtitle {
+    color: #f5e6d3;  /* кремовый/белый */
 }
 
 /* Для элементов, где нужен белый цвет внутри фраз */
@@ -42,6 +48,7 @@ h1, h2, h3, .logo span, .footer-logo span, .nav-link, .cta-btn, .buy-btn, .tab-b
 .gothic-title .neon {
     color: #b388ff;
     text-shadow: 0 0 20px #8a2be2, 0 0 40px #b388ff;
+}
 }
 
 /* ===== ОТСТУПЫ ===== */
