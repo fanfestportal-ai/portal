@@ -24,10 +24,24 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== ЗАГОЛОВКИ ===== */
-h1, h2, h3, .logo span, .footer-logo span, .nav-link, .cta-btn, .buy-btn, .tab-btn, .section-title {
+/* ===== ЗАГОЛОВКИ (ВСЁ ЧТО INKULINATI - ФИОЛЕТОВЫЙ #b388ff) ===== */
+h1, h2, h3, .logo span, .footer-logo span, .nav-link, .cta-btn, .buy-btn, .tab-btn, .section-title,
+.gothic-title, .subtitle, .fest-tagline, .fest-quote, .fest-universe {
     font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
     font-weight: normal;
+    color: #b388ff;
+}
+
+/* Для элементов, где нужен белый цвет внутри фраз */
+.fest-quote strong {
+    color: #ffffff;
+    text-shadow: 0 0 10px #8a2be2;
+}
+
+/* Специально для gothic-title (ФанФест ПОРТАЛ), чтобы слово ПОРТАЛ оставалось неоновым */
+.gothic-title .neon {
+    color: #b388ff;
+    text-shadow: 0 0 20px #8a2be2, 0 0 40px #b388ff;
 }
 
 /* ===== ОТСТУПЫ ===== */
@@ -143,7 +157,8 @@ section {
 }
 
 .nav-link {
-    color: #f5e6d3;
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
+    color: #b388ff;
     text-decoration: none;
     transition: 0.3s;
     font-size: 1.1rem;
@@ -152,7 +167,7 @@ section {
 
 .nav-link:hover, .nav-link.active {
     color: #b388ff;
-    text-shadow: none;
+    text-shadow: 0 0 8px #8a2be2;
 }
 
 .hamburger {
@@ -221,6 +236,7 @@ section {
 
 /* ===== КНОПКИ ===== */
 .cta-btn, .buy-btn {
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
     background: linear-gradient(45deg, #8a2be2, #b388ff);
     border: none;
     padding: 15px 40px;
@@ -246,11 +262,12 @@ section {
     font-size: clamp(2.5rem, 8vw, 5rem);
     margin-bottom: 1rem;
     text-shadow: none;
+    color: #b388ff;
 }
 
 .neon {
     color: #b388ff;
-    text-shadow: none;
+    text-shadow: 0 0 20px #8a2be2, 0 0 40px #b388ff;
 }
 
 .subtitle {
@@ -274,16 +291,14 @@ section {
     margin: 0 auto 20px auto;
     line-height: 1.5;
     text-shadow: none;
+    color: #f5e6d3;
 }
 
 .section-title {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(45deg, #b388ff, #8a2be2);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #b388ff;
     text-shadow: none;
 }
 
@@ -343,6 +358,7 @@ section {
     border-radius: 25px;
     text-align: center;
     transition: all 0.3s ease;
+    color: #f5e6d3;
 }
 
 .feature-item:hover {
@@ -480,8 +496,10 @@ section {
 }
 
 .rule-category h3 {
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
+    color: #b388ff;
 }
 
 .rule-category p {
@@ -504,6 +522,11 @@ section {
     line-height: 1.4;
 }
 
+.fair-rules-single h3 {
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
+    color: #b388ff;
+}
+
 .fair-apply {
     background: rgba(0,0,0,0.4);
     padding: 1rem;
@@ -520,6 +543,11 @@ section {
     margin: 5px 0;
 }
 
+.fair-apply h3 {
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
+    color: #b388ff;
+}
+
 /* ===== БИЛЕТЫ ===== */
 .tickets-container {
     display: grid;
@@ -528,6 +556,7 @@ section {
 }
 
 .ticket-type h3 {
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
     text-align: center;
     margin-bottom: 1rem;
     color: #b388ff;
@@ -594,11 +623,12 @@ section {
 }
 
 .tab-btn {
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
     background: none;
     border: 1px solid #8a2be2;
     padding: 10px 30px;
     border-radius: 30px;
-    color: white;
+    color: #b388ff;
     cursor: pointer;
     box-shadow: none;
     transition: all 0.3s ease;
@@ -610,6 +640,7 @@ section {
 
 .tab-btn.active {
     background: #8a2be2;
+    color: white;
 }
 
 .menu-content {
@@ -628,6 +659,7 @@ section {
 }
 
 .menu-day h3 {
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
     color: #b388ff;
     margin-bottom: 10px;
 }
@@ -662,6 +694,11 @@ section {
     margin-bottom: 1rem;
 }
 
+.footer-logo span {
+    font-family: 'Inkulinati', 'UnifrakturMaguntia', cursive;
+    color: #b388ff;
+}
+
 .footer-links {
     display: flex;
     justify-content: center;
@@ -678,6 +715,10 @@ section {
 
 .footer-links a:hover {
     text-shadow: 0 0 8px #8a2be2;
+}
+
+.footer-copy {
+    color: #888;
 }
 
 /* ===== КАБАН (левый нижний угол) ===== */
@@ -895,7 +936,6 @@ section {
         gap: 0.8rem;
     }
 
-    /* Адаптив для описания фестиваля */
     .fest-description {
         padding: 15px;
         margin: 20px auto;
